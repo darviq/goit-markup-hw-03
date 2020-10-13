@@ -110,7 +110,7 @@ body {
   color: var(--secondary-text-color);
 
   display: inline-block;
-  padding: 60px 0 20px;
+  margin: 60px 0 20px;
 }
 
 .footer-contacts {
@@ -133,7 +133,7 @@ body {
 
 .footer-contacts .mail {
   display: inline-block;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 /* Контент страницы Студия */
@@ -223,6 +223,10 @@ body {
   padding: 0 0 94px;
 }
 
+.work-description-section .image {
+  display: block;
+}
+
 /* Секция team */
 .team-section {
   background-color: var(--secondary-bg-color);
@@ -246,6 +250,8 @@ body {
 }
 
 .team-section .image {
+  box-sizing: content-box;
+  display: block;
   padding-bottom: 30px;
 }
 
@@ -314,7 +320,9 @@ body {
 }
 
 .projects-section .image {
+  display: block;
   padding-bottom: 20px;
+  box-sizing: content-box;
 }
 
 .projects-section .title {
