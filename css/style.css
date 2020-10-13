@@ -75,6 +75,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+.header .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .header .logo-link,
 .main-nav .link {
   color: var(--title-text-color);
@@ -106,20 +111,22 @@ body {
   color: var(--secondary-text-color);
 }
 
-.footer .logo-link {
-  color: var(--secondary-text-color);
-
-  display: inline-block;
-  margin: 60px 0 20px;
-}
-
-.footer-contacts {
+.footer .container {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.footer .logo-link {
+  color: var(--secondary-text-color);
+}
+
+.footer-contacts {
+  margin-top: 20px;
+}
+
 .footer-contacts .text {
-  margin: 0;
-  padding-bottom: 9px;
+  margin-top: 0px;
+  margin-bottom: 9px;
 }
 
 .footer-contacts .link {
@@ -131,7 +138,7 @@ body {
   color: var(--accent-color);
 }
 
-.footer-contacts .mail {
+.footer-contacts .link:not(:last-child) {
   display: inline-block;
   margin-bottom: 9px;
 }
@@ -143,6 +150,11 @@ body {
   color: var(--secondary-text-color);
 }
 
+.order-section .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .order-section .title {
   font-weight: 900;
   font-size: 44px;
@@ -151,9 +163,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin: 0;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .order-section .link {
@@ -167,10 +178,8 @@ body {
   letter-spacing: 0.06em;
 
   display: inline-block;
-  min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 
 /* Секция advantages */
@@ -184,9 +193,14 @@ body {
   text-align: center;
 } */
 
+.advantages-section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advantages-section .list {
   margin: 0;
-  padding: 94px 0;
+  padding: 0;
 }
 
 .advantages-section .title {
@@ -197,8 +211,8 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 
-  margin: 0;
-  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .advantages-section .text {
@@ -206,6 +220,10 @@ body {
 }
 
 /* Секция work-description (чем мы занимаемся) */
+.work-description-section .container {
+  padding-bottom: 94px;
+}
+
 .work-description-section .title {
   color: var(--title-text-color);
 
@@ -215,12 +233,12 @@ body {
   text-align: center;
 
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .work-description-section .list {
   margin: 0;
-  padding: 0 0 94px;
+  padding: 0;
 }
 
 .work-description-section .image {
@@ -232,6 +250,11 @@ body {
   background-color: var(--secondary-bg-color);
 }
 
+.team-section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-section .main-title {
   color: var(--title-text-color);
 
@@ -240,19 +263,21 @@ body {
   line-height: 1.17;
   text-align: center;
 
-  margin: 0;
-  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .team-section .list {
   margin: 0;
-  padding: 0 0 94px;
+  padding: 0;
+}
+
+.team-section .card {
+  padding-bottom: 30px;
 }
 
 .team-section .image {
-  box-sizing: content-box;
   display: block;
-  padding-bottom: 30px;
 }
 
 .team-section .title {
@@ -263,8 +288,8 @@ body {
   line-height: 1.19;
   text-align: center;
 
-  margin: 0;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-section .text {
@@ -273,14 +298,19 @@ body {
   text-align: center;
 
   margin: 0;
-  padding-bottom: 30px;
 }
 
 /* Контент страницы Портфолио */
 /* Секция projects */
+.projects-section .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .projects-section .buttons {
-  padding: 94px 0 50px;
-  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .projects-section .button {
@@ -316,13 +346,15 @@ body {
 
 .projects-section .projects {
   margin: 0;
-  padding: 0 0 94px;
+  padding: 0;
+}
+
+.projects-section .card {
+  padding-bottom: 20px;
 }
 
 .projects-section .image {
   display: block;
-  padding-bottom: 20px;
-  box-sizing: content-box;
 }
 
 .projects-section .title {
@@ -333,8 +365,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin: 0;
-  padding-bottom: 4px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .projects-section .text {
@@ -344,5 +376,4 @@ body {
   line-height: 1.88;
 
   margin: 0;
-  padding-bottom: 20px;
 }
