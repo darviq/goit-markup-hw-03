@@ -24,6 +24,13 @@
 }
 
 /* Общие элементы */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
@@ -62,7 +69,8 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid tomato; */
@@ -83,11 +91,6 @@ body {
 .header .logo-link,
 .main-nav .link {
   color: var(--title-text-color);
-}
-
-.main-nav {
-  padding: 0;
-  margin: 0;
 }
 
 .main-nav .link.active {
@@ -125,7 +128,6 @@ body {
 }
 
 .footer-contacts .text {
-  margin-top: 0px;
   margin-bottom: 9px;
 }
 
@@ -163,7 +165,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin-top: 0;
   margin-bottom: 30px;
 }
 
@@ -195,12 +196,7 @@ body {
 
 .advantages-section .container {
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.advantages-section .list {
-  margin: 0;
-  padding: 0;
+  padding-bottom: 47px;
 }
 
 .advantages-section .title {
@@ -211,16 +207,12 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
 
-  margin-top: 0;
   margin-bottom: 10px;
-}
-
-.advantages-section .text {
-  margin: 0;
 }
 
 /* Секция work-description (чем мы занимаемся) */
 .work-description-section .container {
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 
@@ -232,13 +224,7 @@ body {
   line-height: 1.17;
   text-align: center;
 
-  margin: 0;
   margin-bottom: 50px;
-}
-
-.work-description-section .list {
-  margin: 0;
-  padding: 0;
 }
 
 .work-description-section .image {
@@ -263,13 +249,7 @@ body {
   line-height: 1.17;
   text-align: center;
 
-  margin-top: 0;
   margin-bottom: 50px;
-}
-
-.team-section .list {
-  margin: 0;
-  padding: 0;
 }
 
 .team-section .card {
@@ -296,8 +276,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-
-  margin: 0;
 }
 
 /* Контент страницы Портфолио */
@@ -308,8 +286,6 @@ body {
 }
 
 .projects-section .buttons {
-  padding: 0;
-  margin-top: 0;
   margin-bottom: 50px;
 }
 
@@ -344,11 +320,6 @@ body {
   text-align: center;
 } */
 
-.projects-section .projects {
-  margin: 0;
-  padding: 0;
-}
-
 .projects-section .card {
   padding-bottom: 20px;
 }
@@ -374,6 +345,4 @@ body {
 
   font-size: 16px;
   line-height: 1.88;
-
-  margin: 0;
 }
