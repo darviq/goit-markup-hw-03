@@ -41,6 +41,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -86,23 +90,52 @@ body {
 .header .container {
   padding-top: 24px;
   padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav *:not(:last-child) {
+  margin-right: 93px;
 }
 
 .header .logo-link,
-.main-nav .link {
+.nav-list .link {
   color: var(--title-text-color);
 }
 
-.main-nav .link.active {
+.nav-list {
+  display: flex;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .link.active {
   color: var(--accent-color);
+}
+
+.header-contacts {
+  display: flex;
 }
 
 .header-contacts .link {
   color: var(--primary-text-color);
 }
 
-.main-nav .link:hover,
-.main-nav .link:focus,
+.header-contacts .link:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--accent-color);
@@ -157,6 +190,13 @@ body {
   padding-bottom: 200px;
 }
 
+.order-section .sub-container {
+  width: 696px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .order-section .title {
   font-weight: 900;
   font-size: 44px;
@@ -196,7 +236,20 @@ body {
 
 .advantages-section .container {
   padding-top: 94px;
-  padding-bottom: 47px;
+  padding-bottom: 94px;
+}
+
+.advantages-section .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-section .item {
+  width: calc((100% - 3 * 30px) / 4);
+}
+
+.advantages-section .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-section .title {
@@ -212,7 +265,7 @@ body {
 
 /* Секция work-description (чем мы занимаемся) */
 .work-description-section .container {
-  padding-top: 47px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -227,8 +280,13 @@ body {
   margin-bottom: 50px;
 }
 
-.work-description-section .image {
-  display: block;
+.work-description-section .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-description-section .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Секция team */
@@ -252,12 +310,21 @@ body {
   margin-bottom: 50px;
 }
 
+.team-section .list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-section .card {
+  background-color: var(--primary-bg-color);
+  border-radius: 0px 0px 4px 4px;
+
+  width: calc((100% - 3 * 30px) / 4);
   padding-bottom: 30px;
 }
 
-.team-section .image {
-  display: block;
+.team-section .card:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team-section .title {
@@ -287,6 +354,9 @@ body {
 
 .projects-section .buttons {
   margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .projects-section .button {
@@ -302,6 +372,10 @@ body {
   border-style: none;
   border-radius: 4px;
   padding: 6px 22px;
+}
+
+.projects-section .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .projects-section .button:hover,
@@ -320,12 +394,28 @@ body {
   text-align: center;
 } */
 
-.projects-section .card {
-  padding-bottom: 20px;
+.projects-section .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.projects-section .image {
-  display: block;
+.projects-section .card {
+  width: calc((100% - 2 * 30px) / 3);
+}
+
+/* всем карточкам, кроме 3-х последних */
+.projects-section .card:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+/* всем карточкам, кроме каждой 3-й */
+.projects-section .card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-section .sub-container {
+  padding: 20px 24px;
 }
 
 .projects-section .title {
@@ -336,7 +426,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 
