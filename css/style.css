@@ -85,12 +85,13 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  border-bottom: 1px solid var(--secondary-bg-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header .container {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,7 +102,7 @@ img {
   align-items: center;
 }
 
-.main-nav *:not(:last-child) {
+.main-nav .logo-link {
   margin-right: 93px;
 }
 
@@ -145,11 +146,13 @@ img {
 .footer {
   background-color: var(--tertiary-bg-color);
   color: var(--secondary-text-color);
-}
 
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .sub-container {
+  width: 270px;
 }
 
 .footer .logo-link {
@@ -183,15 +186,13 @@ img {
 .order-section {
   background-color: var(--tertiary-bg-color);
   color: var(--secondary-text-color);
-}
 
-.order-section .container {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.order-section .sub-container {
-  width: 696px;
+.order-section .container {
+  max-width: 696px;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -234,7 +235,7 @@ img {
   text-align: center;
 } */
 
-.advantages-section .container {
+.advantages-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -246,10 +247,6 @@ img {
 
 .advantages-section .item {
   width: calc((100% - 3 * 30px) / 4);
-}
-
-.advantages-section .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .advantages-section .title {
@@ -264,7 +261,7 @@ img {
 }
 
 /* Секция work-description (чем мы занимаемся) */
-.work-description-section .container {
+.work-description-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -285,16 +282,15 @@ img {
   justify-content: space-between;
 }
 
-.work-description-section .item:not(:last-child) {
-  margin-right: 30px;
+.work-description-section .item {
+  width: 370px;
+  height: 294px;
 }
 
 /* Секция team */
 .team-section {
   background-color: var(--secondary-bg-color);
-}
 
-.team-section .container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -323,10 +319,6 @@ img {
   padding-bottom: 30px;
 }
 
-.team-section .card:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-section .title {
   color: var(--title-text-color);
 
@@ -347,7 +339,7 @@ img {
 
 /* Контент страницы Портфолио */
 /* Секция projects */
-.projects-section .container {
+.projects-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -397,7 +389,6 @@ img {
 .projects-section .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .projects-section .card {
@@ -415,6 +406,10 @@ img {
 }
 
 .projects-section .sub-container {
+  border-bottom: 1px solid var(--secondary-bg-color);
+  border-left: 1px solid var(--secondary-bg-color);
+  border-right: 1px solid var(--secondary-bg-color);
+
   padding: 20px 24px;
 }
 
